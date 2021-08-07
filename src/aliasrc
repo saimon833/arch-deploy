@@ -1,0 +1,15 @@
+alias \
+	ls='ls --color=auto --group-directories-first' \
+	ll='ls -alF' \
+	l='ls -CF' \
+	la='ls -A' \
+	cl='clear' \
+	yt='youtube-dl --add-metadata -i' \
+	yta='yt -x -f bestaudio/best' \
+	dupa="echo dupa" \
+	cp='cp -iv' \
+	mv='mv -iv' \
+	rm='rm -v' \
+	mkd='mkfir -pv' \
+	grep='grep --color=auto' \
+	diff='diff --color=auto' 
