@@ -35,6 +35,17 @@ function tablet(){
 		echo "No i dupa"
 	fi
 }
+function tarhelp(){
+	echo "\t#create archive
+	tar -cv\$f tar_name 
+	#untar
+	tar -xv\$f tar_name
+	$:
+	\tblank-no compression
+	\tz-gzip (.tgz, .targz)
+	\tj-bzip2 (.tbz, .tb2, .tar.bz2)
+	\tJ-xz"
+}
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
