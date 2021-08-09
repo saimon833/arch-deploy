@@ -17,12 +17,12 @@ qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
+reflector -c Poland -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 
 systemctl enable cups.service
 systemctl enable sshd
 systemctl enable reflector.timer
 systemctl enable fstrim.timer
-systemctl start NetworkManager
 systemctl enable NetworkManager
 
 useradd -m szymon 
@@ -34,7 +34,6 @@ pacman -Syu
 echo "Enabling multilib\n"
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 echo "Installing packages\n"
-reflector -c Poland -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 pacman -S
 bashtop \
 vlc \
@@ -70,7 +69,7 @@ echo "Enabling & configuring libvirt\n"
 sed -i "/unix_sock_group = \"libvirt\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 sed -i "/unix_sock_rw_perms = \"0770\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 systemctl enable libvirtd.service
-sudo usermod -a -G libvirt szymon
+sudo usermod -aG libvirt szymon
 echo "Downloading paru\n"
 cd ~
 mkdir git
