@@ -79,9 +79,10 @@ let g:lightline = {
 let g:rainbow_active = 1
 
 """" Keybinds
+nnoremap <silent> <C-n> :tabnew<CR>
+
 " Nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
