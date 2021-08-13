@@ -25,7 +25,7 @@ plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions vi-mode)
 source $ZSH/oh-my-zsh.sh
 source ~/.aliasrc
 function tablet(){
-	if xinput | grep -q PenTablet
+	if xinput | grep  PenTablet
 	then
 		echo "Input dev id's: "
 		read id1 id2
