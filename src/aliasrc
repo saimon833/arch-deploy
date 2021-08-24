@@ -6,7 +6,7 @@ alias \
 	cl='clear' \
 	yt='youtube-dl -i' \
 	yta='yt -x -f bestaudio/best' \
-	dupa="echo dupa" \
+	dupa="echo No i dupa" \
 	cp='cp -iv' \
 	mv='mv -iv' \
 	rm='rm -v' \
