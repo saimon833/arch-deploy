@@ -9,7 +9,8 @@ echo "ArchBox" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 ArchBox.localdomain Archbox" >> /etc/hosts
-echo root:password | chpasswd
+echo root password 
+passwd
 
 pacman -S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools reflector base-devel linux-headers avahi xdg-user-dirs \
 xdg-utils gvfs cups hplip alsa-utils pipewire tlp virt-manager \
@@ -26,7 +27,8 @@ systemctl enable fstrim.timer
 systemctl enable NetworkManager
 
 useradd -m szymon 
-echo szymon:password | chpasswd
+echo szymon password 
+passwd szymon
 echo "szymon ALL=(ALL) ALL" >> /etc/sudoers.d/szymon
 
 pacman -Syu
@@ -34,8 +36,7 @@ pacman -Syu
 echo "Enabling multilib\n"
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 echo "Installing packages\n"
-pacman -S
-bashtop \
+pacman -S bashtop \
 vlc \
 xournalpp \
 noto-fonts-cjk \
