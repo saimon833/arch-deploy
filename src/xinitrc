@@ -1,0 +1,4 @@
+slstatus &
+flameshot &
+nitrogen --restore &
+exec dwm
