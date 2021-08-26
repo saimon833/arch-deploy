@@ -74,13 +74,14 @@ systemctl enable libvirtd.service
 sudo usermod -aG libvirt szymon
 su szymon
 echo "Downloading paru\n"
-cd ~
-mkdir git
-cd git
+if [ ! -d "$HOME/git" ]; then
+	mkdir $HOME/git
+fi
+cd $HOME/git
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
-cd ~
+cd $HOME
 sudo pacman -S zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
