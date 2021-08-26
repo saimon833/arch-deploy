@@ -14,7 +14,7 @@ passwd
 
 pacman -S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools reflector base-devel linux-headers avahi xdg-user-dirs \
 xdg-utils gvfs cups hplip alsa-utils pulseaudio virt-manager \
-qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft sof-firmware os-prober ntfs-3g virt-viewer
+qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft sof-firmware os-prober ntfs-3g virt-viewer firewalld
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -25,6 +25,7 @@ systemctl enable sshd
 systemctl enable reflector.timer
 systemctl enable fstrim.timer
 systemctl enable NetworkManager
+systemctl enable firewalld.service
 
 useradd -m szymon 
 echo szymon password 
@@ -83,6 +84,7 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 cd $HOME
+pip3 install pigments
 sudo pacman -S zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
