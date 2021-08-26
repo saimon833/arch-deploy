@@ -78,6 +78,7 @@ if [ ! -d "$HOME/git" ]; then
 	mkdir $HOME/git
 fi
 cd $HOME/git
+git clone https://github.com/saimon833/arch-deploy
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
