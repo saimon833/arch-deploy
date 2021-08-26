@@ -35,6 +35,7 @@ pacman -Syu
 
 echo "Enabling multilib\n"
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+pacman -Syu
 echo "Installing packages\n"
 pacman -S bashtop \
 vlc \
@@ -71,6 +72,7 @@ sed -i "/unix_sock_group = \"libvirt\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 sed -i "/unix_sock_rw_perms = \"0770\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 systemctl enable libvirtd.service
 sudo usermod -aG libvirt szymon
+su szymon
 echo "Downloading paru\n"
 cd ~
 mkdir git
@@ -78,6 +80,9 @@ cd git
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+cd ~
+sudo pacman -S zsh zsh-completions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #echo "Setting grub theme"
 #cp -r Archlinux /usr/share/grub/themes
