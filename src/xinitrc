@@ -1,4 +1,4 @@
+eval "$(ssh-agent -s)"
 slstatus &
-flameshot &
 nitrogen --restore &
-exec dwm
+exec dbus-launch dwm
