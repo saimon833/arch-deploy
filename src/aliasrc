@@ -10,6 +10,6 @@ alias \
 	cp='cp -iv' \
 	mv='mv -iv' \
 	rm='rm -v' \
-	mkd='mkfir -pv' \
+	mkd='mkdir -pv' \
 	grep='grep --color=auto' \
 	diff='diff --color=auto' 
