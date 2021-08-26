@@ -1,0 +1,16 @@
+alias \
+	ls='ls --color=auto --group-directories-first' \
+	ll='ls -alF' \
+	l='ls -CF' \
+	la='ls -A' \
+	cl='clear' \
+	yt='youtube-dl -i' \
+	yta='yt -x -f bestaudio/best' \
+	dupa="echo No i dupa" \
+	cp='cp -iv' \
+	mv='mv -iv' \
+	rm='rm -v' \
+	mkd='mkdir -pv' \
+	grep='grep --color=auto' \
+	diff='diff --color=auto' \
+	mkss='flameshot gui'
