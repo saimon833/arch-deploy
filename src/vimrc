@@ -27,7 +27,7 @@ Plug 'preservim/nerdtree'
 Plug 'yggdroot/indentline'
 
 " Code completion, youcompleteme
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 
 call plug#end()
 set number

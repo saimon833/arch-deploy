@@ -21,7 +21,7 @@ cp $HOME/git/arch-deploy/src/xinitrc $HOME/.xinitrc
 mkdir $HOME/.config/alacritty/
 cp $HOME/git/arch-deploy/src/alacritty.yml $HOME/.config/alacritty/alacritty.yml
 mkdir $HOME/.config/gtk-3.0/
-cp settings.ini $HOME/.config/gtk-3.0/settings.ini
-cp gtkrc-2.0 $HOME/.gtkrc-2.0
+cp $HOME/git/arch-deploy/src/settings.ini $HOME/.config/gtk-3.0/settings.ini
+cp $HOME/git/arch-deploy/src/gtkrc-2.0 $HOME/.gtkrc-2.0
 
 

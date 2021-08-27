@@ -14,7 +14,7 @@ passwd
 
 pacman -S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools reflector base-devel linux-headers avahi xdg-user-dirs \
 xdg-utils gvfs cups hplip alsa-utils pulseaudio virt-manager \
-qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft sof-firmware os-prober ntfs-3g virt-viewer firewalld
+qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft sof-firmware os-prober ntfs-3g virt-viewer firewalld mc openssh
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -45,7 +45,7 @@ noto-fonts-cjk \
 noto-fonts-emoji \
 noto-fonts \
 archlinux-wallpaper \
-papirus \
+papirus-icon-theme \
 wget \
 curl \
 texlive-most \
@@ -63,7 +63,7 @@ lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjp
 sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama \
 ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 \
 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader \
-lib32-libxml2 lib32-sdl2 lib32-freetype2 lib32-dbus
+lib32-libxml2 lib32-sdl2 lib32-freetype2 lib32-dbus \
 steam 
 
 echo "Enabling & configuring libvirt\n"
@@ -73,23 +73,3 @@ sed -i "/unix_sock_group = \"libvirt\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 sed -i "/unix_sock_rw_perms = \"0770\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 systemctl enable libvirtd.service
 sudo usermod -aG libvirt szymon
-su szymon
-echo "Downloading paru\n"
-if [ ! -d "$HOME/git" ]; then
-	mkdir $HOME/git
-fi
-cd $HOME/git
-git clone https://github.com/saimon833/arch-deploy
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-cd $HOME
-pip3 install pigments
-sudo pacman -S zsh zsh-completions
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-#echo "Setting grub theme"
-#cp -r Archlinux /usr/share/grub/themes
-#echo "GRUB_THEME=\"/usr/share/grub/themes/Archlinux/theme.txt\"" >> /etc/default/grub
-#grub-mkconfig -o /boot/grub/grub.cfg
-#echo "Now you can reboot"
