@@ -5,3 +5,6 @@ cd arch-deploy/
 cd src/
 chmod +x initial_setup.sh
 ./initial_setup.sh
+chmod +x usersetup.sh
+su szymon
+./usersetup.sh
