@@ -1,10 +1,9 @@
 #!/usr/bin/bash
 cd ~
 git clone https://github.com/saimon833/arch-deploy
-cd arch-deploy/
-cd src/
-chmod +x initial_setup.sh
-./initial_setup.sh
-chmod +x usersetup.sh
-su szymon
-./usersetup.sh
+chmod +x $HOME/arch-deploy/src/initial_setup.sh
+sh -c "$HOME/arch-deploy/src/initial_setup.sh"
+
+chmod +x $HOME/arch-deploy/src/usersetup.sh
+su -c "$HOME/arch-deploy/src/usersetup.sh" - szymon
+
