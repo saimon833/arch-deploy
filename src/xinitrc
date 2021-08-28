@@ -1,4 +1,6 @@
+#!/bin/sh
 eval "$(ssh-agent -s)"
+xautolock -time 10 -locker slock &
 slstatus &
 nitrogen --restore &
 exec dbus-launch dwm
