@@ -5,6 +5,7 @@ fi
 sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince
 cd $HOME/git
 git clone https://github.com/saimon833/dwm
+#git clone https://git.suckless.org/dwm
 git clone https://github.com/saimon833/dmenu
 git clone https://github.com/saimon833/slstatus
 git clone https://github.com/saimon833/st
