@@ -8,6 +8,7 @@ git clone https://github.com/saimon833/dwm
 git clone https://github.com/saimon833/dmenu
 git clone https://github.com/saimon833/slstatus
 git clone https://github.com/saimon833/st
+git clone https://github.com/saimon833/slock
 cd $HOME/git/dwm
 sudo make clean install
 
@@ -18,6 +19,9 @@ cd $HOME/git/slstatus
 sudo make clean install 
 
 cd $HOME/git/st
+sudo make clean install
+
+cd $HOME/git/slock
 sudo make clean install
 
 cp $HOME/git/arch-deploy/src/xinitrc $HOME/.xinitrc
