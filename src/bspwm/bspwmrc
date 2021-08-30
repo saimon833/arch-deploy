@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 nitrogen --restore 
-
+setxkbmap pl
 bspc monitor DP-0 -d  I II III IV V VI VII
 bspc monitor HDMI-0 -d VIII IX X
 
