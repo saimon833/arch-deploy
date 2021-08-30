@@ -2,7 +2,7 @@
 if [ ! -d "$HOME/git" ]; then
 	mkdir $HOME/git
 fi
-sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince
+sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince xautolock
 cd $HOME/git
 #git clone https://github.com/saimon833/dwm
 #git clone https://git.suckless.org/dwm
