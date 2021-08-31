@@ -1,8 +1,10 @@
 #!/bin/sh
 eval "$(ssh-agent -s)"
-xautolock -time 15 -locker slock -detectsleep &
+#xautolock -time 10 -locker slock &
+setxkbmap pl &
+xsetroot -cursor_name left_ptr
 nitrogen --restore &
 flameshot &
 synology-drive &
-dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 exec bspwm
