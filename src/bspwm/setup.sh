@@ -1,10 +1,7 @@
 #!/usr/bin/zsh
-sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince bspwm sxhkd alacritty nitrogen xautolock dmenu
+sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince bspwm sxhkd alacritty nitrogen xautolock
 
-paru -S polybar pacman-contrib ttf-font-awesome siji-git
-git clone https://github.com/saimon833/slock $HOME/git/slock 
-cd $HOME/git/slock
-sudo make clean install
+paru -S polybar pacman-contrib ttf-font-awesome siji-git betterlockscreen j4-dmenu-desktop
 ln -s $HOME/git/arch-seploy/src/bspwm/xinitrc .xinitrc
 mkdir $HOME/.config/alacritty/
 ln -s $HOME/git/arch-seploy/src/bspwm/alacritty.yml $HOME/.config/alacritty/alacritty.yml
