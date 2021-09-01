@@ -2,7 +2,7 @@
 # wm independent hotkeys
 #
 super + q
-	killall -q polybar && polybar bar2 2>&1 | tee -a /tmp/polybar2.log & disown
+	polybar-msg cmd toogle
 # terminal emulator
 super + Return
 	alacritty

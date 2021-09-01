@@ -39,6 +39,7 @@ success = #A3BE8C
 function = #B48EAD
 
 [bar/bar1]
+enable-ipc = true
 ;monitor = ${env:MONITOR:}
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
