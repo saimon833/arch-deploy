@@ -2,6 +2,7 @@
 eval "$(ssh-agent -s)"
 #xautolock -time 10 -locker slock &
 setxkbmap pl &
+# picom -f --blur-background &
 xsetroot -cursor_name left_ptr
 nitrogen --restore &
 flameshot &

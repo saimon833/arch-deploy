@@ -1,4 +1,3 @@
-#
 # wm independent hotkeys
 #
 super + q
@@ -125,4 +124,7 @@ Print
 
 #lockscreen
 super + x
-	betterlockscreen -l dimblur --off 1
+	betterlockscreen -l dimblur --off 2
+
+super + shift + x
+	betterlockscreen -l dimblur & systemctl suspend
