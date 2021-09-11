@@ -5,7 +5,6 @@ super + q
 # terminal emulator
 super + Return
 	alacritty
-
 # program launcher
 super + @space
 	j4-dmenu-desktop

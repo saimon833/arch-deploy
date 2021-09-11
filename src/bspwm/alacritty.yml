@@ -12,8 +12,7 @@ font:
     family: monospace
     style: Bold Italic
   size: 13
-background_opacity: 0.85
-# background_opacity: 0.5
+background_opacity: 0.95
 # Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
 # Copyright (c) 2017-present Sven Greb <code@svengreb.de>
 

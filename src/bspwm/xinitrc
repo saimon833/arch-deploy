@@ -1,11 +1,12 @@
 #!/bin/sh
-eval "$(ssh-agent -s)"
+#eval "$(ssh-agent -s)"
 #xautolock -time 10 -locker slock &
 setxkbmap pl &
-# picom -f --blur-background &
+picom &
 xsetroot -cursor_name left_ptr
 nitrogen --restore &
-flameshot &
-synology-drive &
-dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
+lxsession &
+# flameshot &
+# synology-drive &
+# dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY &
 exec bspwm
