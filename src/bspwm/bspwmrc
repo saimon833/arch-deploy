@@ -29,7 +29,6 @@ setxkbmap pl &
 picom &
 nitrogen --restore & 
 pgrep -x parcellite || parcellite &
-pgrep -x aa-notify > /dev/null || aa-notify -p -s 1 -w 60 -f /var/log/audit/audit.log &
 pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x flameshot || flameshot &
@@ -40,5 +39,5 @@ pgrep -x firefox > /dev/null || firefox &
 pgrep -x alacritty > /dev/null || alacritty &
 pgrep -x thunderbird > /dev/null || thunderbird &
 pgrep -x firewall-applet > /dev/null || firewall-applet &
-pgrep -x nm-applet > /dev/null || nm-applet
+pgrep -x nm-applet > /dev/null || nm-applet &
 $HOME/.config/polybar/launch.sh

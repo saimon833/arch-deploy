@@ -79,7 +79,7 @@ tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
+wm-restack = bspwm
 ;wm-restack = i3
 
 ;override-redirect = true
@@ -295,7 +295,7 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #88c0d0
-label = %gb_used%/%gb_total%
+label = %gb_used%
 
 [module/wlan]
 type = internal/network
