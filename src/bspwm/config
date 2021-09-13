@@ -202,9 +202,10 @@ ws-icon-2 = III;
 ws-icon-3 = IV;
 ws-icon-4 = V;
 ws-icon-5 = VI;
-ws-icon-6 = VII;7
-ws-icon-7 = VIII;
-ws-icon-8 = IX;
+ws-icon-6 = VII;
+ws-icon-7 = VIII;
+ws-icon-8 = IX;
+ws-icon-9 = X;
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -292,7 +293,7 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #88c0d0
-label = %percentage_used%%
+label = %gb_used%/%gb_total%
 
 [module/wlan]
 type = internal/network

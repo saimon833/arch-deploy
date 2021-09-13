@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-export EDITOR="/usr/bin/vim"
-# Path to your oh-my-zsh installation.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export BROWSER="firefox"
 export ZSH="/home/szymon/.oh-my-zsh"
+export EDITOR="vim"
+export VISUAL="vim"
+export VIDEO="vlc"
+export IMAGE="feh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -67,7 +70,7 @@ function tarhelp(){
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
