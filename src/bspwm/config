@@ -126,9 +126,9 @@ font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=8
 font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
 
-modules-left = bspwm i3
-modules-center = mpd date
-modules-right =  
+modules-left = bspwm 
+modules-center = mpd 
+modules-right = date
 
 ;tray-background = #0063ff
 
@@ -171,6 +171,8 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
+mount-1 = /Dane
+mount-2 = /Dane2
 
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
