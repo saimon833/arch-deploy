@@ -8,6 +8,9 @@ wget -O $HOME/.local/share/fonts/MesloLGS\ NF\ Regular.ttf https://github.com/ro
 wget -O $HOME/.local/share/fonts/MesloLGS\ NF\ Bold.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 wget -O $HOME/.local/share/fonts/MesloLGS\ NF\ Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 wget -O $HOME/.local/share/fonts/MesloLGS\ NF\ Bold\ Italic.ttf https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+[ -d "$HOME/.config/ranger" ] || mkdir $HOME/.config/ranger
+ln -s $HOMW/git/arch-deploy/src/rc.conf $HOME/.config/ranger/rc.conf
+ln -s $HOMW/git/arch-deploy/src/rifle.conf $HOME/.config/ranger/rifle.conf
 rm ~/.zshrc
 rm ~/.vimrc
 ln -s $HOME/git/arch-deploy/src/vimrc ~/.vimrc 

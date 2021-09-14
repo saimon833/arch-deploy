@@ -13,4 +13,4 @@ alias \
 	mkd='mkdir -pv' \
 	grep='grep --color=auto' \
 	diff='diff --color=auto' \
-	mkss='flameshot gui'
+	:q='exit' 

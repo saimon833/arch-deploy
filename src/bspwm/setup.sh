@@ -1,12 +1,12 @@
 #!/usr/bin/zsh
-sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince bspwm sxhkd alacritty nitrogen xautolock
+sudo pacman -S nvidia nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince bspwm sxhkd alacritty nitrogen ranger ueberzug
 
 paru -S polybar pacman-contrib ttf-font-awesome siji-git betterlockscreen j4-dmenu-desktop
 ln -s $HOME/git/arch-seploy/src/bspwm/xinitrc .xinitrc
 mkdir $HOME/.config/alacritty/
 ln -s $HOME/git/arch-seploy/src/bspwm/alacritty.yml $HOME/.config/alacritty/alacritty.yml
-install -Dm755 $HOME/git/arch-seploy/src/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
-install -Dm644 $HOME/git/arch-seploy/src/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
+ln -s $HOME/git/arch-seploy/src/bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
+ln -s $HOME/git/arch-seploy/src/bspwm/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
 mkdir $HOME/.config/polybar
 ln -s $HOME/git/arch-seploy/src/bspwm/config $HOME/.config/polybar/config
 ln - $HOME/git/arch-seploy/src/bspwm/launch.sh $HOME/.config/polybar/launch.sh
