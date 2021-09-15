@@ -1,7 +1,7 @@
 # wm independent hotkeys
 #
-super + q
-	polybar-msg cmd toggle
+# super + q
+#	polybar-msg cmd toggle
 # terminal emulator
 super + Return
 	alacritty

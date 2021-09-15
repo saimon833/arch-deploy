@@ -37,7 +37,7 @@ pgrep -x Discord || flatpak run com.discordapp.Discord &
 pgrep -x lxsession || lxsession &
 pgrep -x firefox > /dev/null || firefox &
 pgrep -x alacritty > /dev/null || alacritty &
-pgrep -x thunderbird > /dev/null || thunderbird &
-pgrep -x firewall-applet > /dev/null || firewall-applet &
+# pgrep -x thunderbird > /dev/null || thunderbird &
+# pgrep -x firewall-applet > /dev/null || firewall-applet &
 pgrep -x nm-applet > /dev/null || nm-applet &
 $HOME/.config/polybar/launch.sh
