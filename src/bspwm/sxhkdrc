@@ -118,8 +118,13 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# screenshot
 Print
 	flameshot gui
+# monitor screenshot
+{ctrl, shift} + Print
+	flameshot {screen -c, full -c}
 
 #lockscreen
 super + x
@@ -127,3 +132,10 @@ super + x
 
 super + shift + x
 	betterlockscreen -l dimblur & systemctl suspend
+
+# gnome system monitor
+ctrl + alt + Delete
+    gnome-system-monitor
+# firefox
+super + alt + f
+    firefox
