@@ -1,0 +1,22 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p3
+UUID=b6dc745c-ffad-4e6d-b4b3-394978513674	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p2
+UUID=e6744602-65ce-483b-8a7f-b4eb0382f0e5	/boot     	ext4      	rw,relatime	0 2
+
+# /dev/nvme0n1p1
+UUID=7E07-97BE      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+UUID=a4ae0f4e-5ca9-4a74-945f-6c8e6c161a5b /Dane auto nosuid,nodev,nofail,x-gvfs-show 0 0
+/dev/SSD/games 				  /games auto nosuid,nodev,nofail,rw 0 0
+/dev/SSD/vms                              /vm   auto nosuid,nodev,nofail,rw 0 0
+
+tmpfs	/home/szymon/tmp         tmpfs   noauto,user,size=100M,mode=0770          0  0
+
+//10.0.10.5/Dysk		/home/szymon/Dyski/Dysk			cifs		guest,noperm,user,noauto 0 0
+//10.0.10.5/Szymon		/home/szymon/Dyski/Szymon		cifs		credentials=/home/szymon/.smb,noperm,noauto,user 0 0
+//10.0.10.5/VM			/home/szymon/Dyski/VM			cifs		credentials=/home/szymon/.smb,noperm,user,noauto 0 0
