@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+pkexec sh -c 'sysctl -w abi.vsyscall32=1'
+
