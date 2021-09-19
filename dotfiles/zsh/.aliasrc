@@ -13,4 +13,5 @@ alias \
 	mkd='mkdir -pv' \
 	grep='grep --color=auto' \
 	diff='diff --color=auto' \
-	:q='exit' 
+	:q='exit' \
+	neoall='neofetch --no_config'
