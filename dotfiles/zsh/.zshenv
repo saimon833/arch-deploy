@@ -1,0 +1,10 @@
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export BROWSER="firefox"
+export ZSH="/home/szymon/.oh-my-zsh"
+export EDITOR="vim"
+export VISUAL="vim"
+export VIDEO="vlc"
+export IMAGE="feh"
+export TERM=xterm-256color
+export SUDO_PROMPT="Onii-chan, please give me your password: "
+export HISTORY_IGNORE="(ls|ll|la|l|cd|pwd|exit|cd ..|..|~|:q)"
