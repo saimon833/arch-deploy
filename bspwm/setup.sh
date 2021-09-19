@@ -9,3 +9,4 @@ stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles polybar
 chmod +x $HOME/.config/polybar/launch.sh
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles gtk2.0
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles gtk-3.0
+stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles picom
