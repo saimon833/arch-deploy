@@ -11,4 +11,5 @@ wget -O $HOME/.local/share/fonts/MesloLGS\ NF\ Bold\ Italic.ttf https://github.c
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ ranger
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ vim
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ zsh
+stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ neofetch
 source ~/.zshrc
