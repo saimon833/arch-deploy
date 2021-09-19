@@ -54,7 +54,10 @@ texlive-latexextra \
 texmaker \
 python-pip \
 firefox \
-thunderbird 
+thunderbird \
+pkgfile
+
+pkgfile -u
 
 echo "Enabling & configuring libvirt\n"
 # Start the Service Right now
