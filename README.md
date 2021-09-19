@@ -1,6 +1,7 @@
 # arch-deploy
 My shitty config for Arch Linux <br>
 Heavily inspired by Ermanno Ferrari https://gitlab.com/eflinux/arch-basic<br>
+Amogus theme taken from https://github.com/sueperb/tasty-grubs
 
 A small summary:
 
