@@ -12,4 +12,5 @@ stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ ranger
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ vim
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ zsh
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ neofetch
+stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ htop
 source ~/.zshrc
