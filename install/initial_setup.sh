@@ -55,7 +55,8 @@ texmaker \
 python-pip \
 firefox \
 thunderbird \
-pkgfile
+pkgfile \
+rustup
 
 pkgfile -u
 

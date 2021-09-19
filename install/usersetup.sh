@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+rustup install stable
 echo "Downloading paru\n"
 if [ ! -d "$HOME/git" ]; then
 	mkdir $HOME/git
