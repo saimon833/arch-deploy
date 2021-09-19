@@ -38,17 +38,7 @@ plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions vi-mode pytho
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliasrc
-function tablet(){
-	if xinput | grep  PenTablet
-	then
-		echo "Input dev id's: "
-		read id1 id2
-		xinput map-to-output $id1 DP-0
-		xinput map-to-output $id2 DP-0
-	else
-		echo "No i dupa"
-	fi
-}
+
 function tarhelp(){
 	echo "\t#create archive
 	tar -cvaf tar_name 
