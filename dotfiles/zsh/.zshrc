@@ -6,16 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export BROWSER="firefox"
-export ZSH="/home/szymon/.oh-my-zsh"
-export EDITOR="vim"
-export VISUAL="vim"
-export VIDEO="vlc"
-export IMAGE="feh"
-export TERM=xterm-256color
-export SUDO_PROMPT="Onii-chan, please give me your password: "
-export HISTORY_IGNORE="(ls|ll|la|l|cd|pwd|exit|cd ..|..|~|:q)"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
