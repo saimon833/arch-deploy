@@ -21,6 +21,7 @@ bspc rule -a 'Microsoft Teams - Preview' desktop='^10'
 bspc rule -a Virt-manager desktop='^5' follow=on
 bspc rule -a Steam desktop='^6' follow=on
 bspc rule -a Thunderbird desktop='^8' 
+bspc rule -a explorer.exe desktop='^6'
 
 # Autostart
 
