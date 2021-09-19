@@ -1,6 +1,8 @@
 #!/usr/bin/zsh
-sudo pacman -S nvidia-dkms nvidia-utils xorg nvidia-settings xorg xorg-xinit flameshot nemo pavucontrol eog evince bspwm sxhkd alacritty nitrogen ranger ueberzug dmenu
-paru -S polybar pacman-contrib ttf-font-awesome siji-git betterlockscreen j4-dmenu-desktop
+sudo pacman -S nvidia-dkms nvidia-utils xorg nvidia-settings xorg xorg-xinit \
+flameshot nemo pavucontrol eog evince bspwm sxhkd alacritty nitrogen ranger ueberzug \ dmenu
+paru -S polybar pacman-contrib ttf-font-awesome siji-git betterlockscreen \
+j4-dmenu-desktop ly nordic-darker-theme
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles xinit
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles alacritty
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles bspwm
