@@ -27,7 +27,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions vi-mode python command-not-found copyfile copydir)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.aliasrc
 
 function tarhelp(){
 	echo "\t#create archive
