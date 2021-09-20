@@ -25,6 +25,8 @@ Plug 'preservim/nerdtree'
 " Indentation guidelines
 Plug 'yggdroot/indentline'
 
+Plug 'vim-latex/vim-latex'
+
 " Code completion, youcompleteme
 "Plug 'valloric/youcompleteme'
 call plug#end()
