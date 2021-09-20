@@ -1,7 +1,5 @@
 # wm independent hotkeys
 #
-# super + q
-#	polybar-msg cmd toggle
 # terminal emulator
 super + Return
 	alacritty
@@ -139,3 +137,7 @@ ctrl + alt + Delete
 # firefox
 super + alt + f
     firefox
+
+# file manager
+super + alt + e
+    doublecmd --no-splash -L $HOME -R $HOME/Downloads
