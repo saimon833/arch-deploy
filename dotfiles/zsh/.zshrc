@@ -108,7 +108,25 @@ function tarhelp(){
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias \
+	ls='ls --color=auto --group-directories-first' \
+	ll='ls -alF' \
+	l='ls -CF' \
+	la='ls -A' \
+	cl='clear' \
+	yt='youtube-dl -i' \
+	yta='yt -x -f bestaudio/best' \
+	dupa="echo No i dupa" \
+	cp='cp -iv' \
+	mv='mv -iv' \
+	rm='rm -v' \
+	mkd='mkdir -pv' \
+	grep='grep --color=auto' \
+	diff='diff --color=auto' \
+	:q='exit' \
+	neoall='neofetch --no_config'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
