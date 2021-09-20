@@ -128,7 +128,7 @@ font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
 modules-left = bspwm 
 modules-center = mpd 
-modules-right = cpu memory date
+modules-right = filesystem cpu memory date
 
 ;tray-background = #0063ff
 
