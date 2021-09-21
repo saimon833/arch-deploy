@@ -1,4 +1,4 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.scripts:$HOME/bin:/usr/local/bin:$PATH
 export BROWSER="firefox"
 export ZSH="/home/szymon/.oh-my-zsh"
 export EDITOR="vim"
