@@ -2,6 +2,7 @@
 My shitty config for Arch Linux <br>
 Heavily inspired by Ermanno Ferrari https://gitlab.com/eflinux/arch-basic<br>
 Amogus theme taken from https://github.com/sueperb/tasty-grubs
+Wallpapers taken from https://nordthemewallpapers.com/
 
 A small summary:
 
