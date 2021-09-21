@@ -15,4 +15,5 @@ stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ neofetch
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ htop
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ xdg-dirs
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ scripts
+stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ nemo
 source ~/.zshrc
