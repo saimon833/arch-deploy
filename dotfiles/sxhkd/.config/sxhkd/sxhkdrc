@@ -140,4 +140,4 @@ super + alt + f
 
 # file manager
 super + alt + e
-    doublecmd --no-splash -L $HOME -R $HOME/Downloads
+	nemo
