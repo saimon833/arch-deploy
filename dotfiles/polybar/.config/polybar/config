@@ -26,7 +26,7 @@ background-alt = #444
 foreground = #D8DEE9
 foreground-alt = #8fbcbb
 primary = #8fbcbb
-secondary = #e60053
+secondary = #b48ead
 alert = #bd2c40
 nord6 = #ECEFF4
 nord7 = #8FBCBB
@@ -171,7 +171,7 @@ mount-0 = /
 mount-1 = /Dane
 mount-2 = /games
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#5e81ac}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
