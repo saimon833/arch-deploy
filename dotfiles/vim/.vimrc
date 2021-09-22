@@ -27,6 +27,8 @@ Plug 'yggdroot/indentline'
 
 Plug 'vim-latex/vim-latex'
 
+Plug 'arcticicestudio/nord-vim'
+
 " Code completion, youcompleteme
 "Plug 'valloric/youcompleteme'
 call plug#end()
@@ -59,6 +61,12 @@ set showcmd " show command in bottom bar
 set showmatch  " highlight matching brackets
 set laststatus=2 "
 set nopaste
+colorscheme nord
+highlight Comment ctermfg=darkgray
+if (has("termguicolors"))
+  set termguicolors
+endif
+hi Normal guibg=NONE ctermbg=NONE
 
 """" Search
 set hlsearch " highlight matches
@@ -72,7 +80,7 @@ filetype plugin on
 " Lightline
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'powerlineish',
+      \ 'colorscheme': 'nord',
       \ }
 
 " Rainbow
