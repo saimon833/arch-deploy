@@ -126,6 +126,7 @@ alias \
 	diff='diff --color=auto' \
 	:q='exit' \
 	neoall='neofetch --no_config' \
-	latexgen='pdflatex -shell-escape'
+	latexgen='pdflatex -shell-escape' \
+	dot='cd ~/git/arch-deploy'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
