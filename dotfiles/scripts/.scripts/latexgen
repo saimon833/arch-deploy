@@ -1,0 +1,9 @@
+#!/usr/bin/zsh
+[ ! -f $1 ] && echo "No file provided" &&  exit
+if [[ $1 == *.tex ]]
+then
+	[ -d 'build' ] || mkdir build/
+	pdflatex -output-directory=build/ -shell-escape $1
+else
+	echo "This is not tex file"
+fi
