@@ -1,8 +1,0 @@
-[Nemo Action]
-
-Name=Open in Alacritty
-Comment=Open the 'alacritty' terminal in the selected folder
-Exec=alacritty --working-directory="%F"
-Icon-Name=alacritty
-Selection=any
-Extensions=dir;
