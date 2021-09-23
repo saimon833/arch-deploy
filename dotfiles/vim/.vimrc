@@ -68,6 +68,18 @@ if (has("termguicolors"))
 endif
 hi Normal guibg=NONE ctermbg=NONE
 
+" augroup nord
+"     autocmd!
+"     autocmd ColorScheme * highlight shDerefSimple ctermfg=6 guifg=#88C0D0
+"     autocmd ColorScheme * highlight shDerefVar ctermfg=6 guifg=#88C0D0
+"     autocmd ColorScheme * highlight shVariable ctermfg=6 guifg=#88C0D0
+" augroup END
+
+augroup nord-overrides
+    autocmd!
+    autocmd ColorScheme nord highlight "...
+augroup END
+
 """" Search
 set hlsearch " highlight matches
 if has('mouse')

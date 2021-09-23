@@ -17,3 +17,5 @@ stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ xdg-dirs
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ scripts
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ makepkg
 source ~/.zshrc
+gsettings set org.cinnamon.desktop.default-applications.terminal exec urxvt
+gsettings set org.cinnamon.desktop.default-applications.terminal exec-arg -e
