@@ -69,7 +69,7 @@ font-3 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:size=
 font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=8
 font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
-modules-left = bspwm 
+modules-left = bspwm xwindow
 modules-center = 
 modules-right = filesystem pulseaudio xkeyboard cpu memory eth date powermenu
 
@@ -123,7 +123,7 @@ font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=8
 font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
 
-modules-left = bspwm 
+modules-left = bspwm xwindow
 modules-center = 
 modules-right = filesystem cpu memory date
 
@@ -145,7 +145,11 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+;label = %title:0:30:...%
+label = %title%
+
+;format-foreground = ${colors.foreground}
+;format-background = ${colors.background}
 
 [module/xkeyboard]
 type = internal/xkeyboard
