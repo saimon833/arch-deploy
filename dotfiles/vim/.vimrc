@@ -27,6 +27,10 @@ Plug 'yggdroot/indentline'
 
 Plug 'vim-latex/vim-latex'
 
+Plug 'tpope/vim-surround'
+
+Plug 'airblade/vim-gitgutter'
+
 Plug 'arcticicestudio/nord-vim'
 
 " Code completion, youcompleteme
