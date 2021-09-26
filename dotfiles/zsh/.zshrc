@@ -119,7 +119,7 @@ alias yta='yt -x -f bestaudio/best'
 alias dupa="echo No i dupa"
 alias cp='cp -iv'
 alias mv='mv -iv'
-alias rm='rm -v'
+alias rm='rm -iv'
 alias mkd='mkdir -pv'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'

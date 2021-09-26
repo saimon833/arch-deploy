@@ -26,7 +26,7 @@ bspc rule -a Lutris desktop='^6'
 
 # Autostart
 
-eval "$(ssh-agent -s)"
+pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
 picom &
 nitrogen --restore & 
