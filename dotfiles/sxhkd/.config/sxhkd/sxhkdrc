@@ -126,10 +126,10 @@ Print
 
 #lockscreen
 super + x
-	betterlockscreen -l dimblur --off 2
+	betterlockscreen -l dimblur --off 30
 
 super + shift + x
-	betterlockscreen -l dimblur & systemctl suspend
+	systemctl suspend
 
 # gnome system monitor
 ctrl + alt + Delete

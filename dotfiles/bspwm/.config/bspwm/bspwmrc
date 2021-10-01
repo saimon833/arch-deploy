@@ -23,7 +23,8 @@ bspc rule -a Steam desktop='^6' follow=on
 bspc rule -a Thunderbird desktop='^8' 
 bspc rule -a explorer.exe desktop='^7'
 bspc rule -a Lutris desktop='^6'
-
+# Uncomment only if primary monitor is on the right
+bspc monitor HDMI-0 -s DP-0
 # Autostart
 
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
