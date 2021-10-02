@@ -2,6 +2,7 @@
 
 bspc monitor DP-0 -d I II III IV V VI VII VIII 
 bspc monitor HDMI-0 -d IX X
+bspc monitor HDMI-0 -s DP-0
 
 bspc config border_width         2
 bspc config window_gap          10
@@ -12,9 +13,9 @@ bspc config gapless_monocle      true
 
 # Window rules
 bspc rule -a Alacritty -o desktop='^1' 
-# bspc rule -a Gimp-2.10 desktop='^7' follow=on
 bspc rule -a firefox -o desktop='^2' follow=on
 bspc rule -a discord desktop='^9'
+#bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Xournalpp desktop='^3' follow=on
 bspc rule -a 'Microsoft Teams - Preview' desktop='^10' 
@@ -22,22 +23,20 @@ bspc rule -a Virt-manager desktop='^5' follow=on
 bspc rule -a Steam desktop='^6' follow=on
 bspc rule -a Thunderbird desktop='^8' 
 bspc rule -a explorer.exe desktop='^7'
-bspc rule -a Lutris desktop='^6'
-# Uncomment only if primary monitor is on the right
-bspc monitor HDMI-0 -s DP-0
+bspc rule -a Lutris desktop='^6' follow=on
 # Autostart
 
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
 picom &
 nitrogen --restore & 
-pgrep -x parcellite || parcellite &
+pgrep -x parcellite > /dev/null || parcellite &
 pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
-pgrep -x flameshot || flameshot &
-pgrep -x Discord || flatpak run com.discordapp.Discord &
+pgrep -x flameshot > /dev/null || flameshot &
+pgrep -x Discord > /dev/null || flatpak run com.discordapp.Discord &
 # pgrep -x teams || flatpak run com.microsoft.Teams &
-pgrep -x lxsession || lxsession &
+pgrep -x lxsession > /dev/null || lxsession &
 pgrep -x firefox > /dev/null || firefox &
 pgrep -x alacritty > /dev/null || alacritty &
 # pgrep -x thunderbird > /dev/null || thunderbird &

@@ -138,6 +138,10 @@ ctrl + alt + Delete
 super + alt + f
     firefox
 
+# librewolf
+super + alt + shift + f
+    librewolf
+
 # file manager
 super + alt + e
 	nemo
