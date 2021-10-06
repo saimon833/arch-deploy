@@ -27,8 +27,6 @@ Plug 'yggdroot/indentline'
 
 Plug 'vim-latex/vim-latex'
 
-Plug 'tpope/vim-surround'
-
 Plug 'airblade/vim-gitgutter'
 
 Plug 'arcticicestudio/nord-vim'
@@ -36,6 +34,7 @@ Plug 'arcticicestudio/nord-vim'
 " Code completion, youcompleteme
 "Plug 'valloric/youcompleteme'
 call plug#end()
+
 set number
 set relativenumber
 syntax on
@@ -65,11 +64,13 @@ set showcmd " show command in bottom bar
 set showmatch  " highlight matching brackets
 set laststatus=2 "
 set nopaste
+
 colorscheme nord
 highlight Comment ctermfg=darkgray
 if (has("termguicolors"))
   set termguicolors
 endif
+
 hi Normal guibg=NONE ctermbg=NONE
 
 " augroup nord
@@ -114,3 +115,9 @@ nnoremap <C-f> :NERDTreeFind<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 let NERDTreeShowHidden=1
+
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}

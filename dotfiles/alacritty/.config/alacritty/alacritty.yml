@@ -78,5 +78,6 @@ window:
     y: 12
   dynamic_padding: true
   decorations: full
+  decorations: full
   dynamic_title: true
 

@@ -138,10 +138,9 @@ ctrl + alt + Delete
 super + alt + f
     firefox
 
-# librewolf
-super + alt + shift + f
-    librewolf
-
 # file manager
 super + alt + e
 	nemo
+
+XF86Audio{Mute,RaiseVolume,LowerVolume}
+	amixer -D pulse sset Master {mute,5%+ unmute,5%- unmute}

@@ -71,7 +71,7 @@ font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = filesystem pulseaudio xkeyboard cpu memory eth date  powermenu
+modules-right = filesystem pulseaudio kernel xkeyboard cpu memory eth date  powermenu
 
 tray-position = right
 tray-padding = 2
@@ -374,6 +374,15 @@ menu-0-1-exec = poweroff
 ; format-prefix = " "
 ; format-prefix-foreground = ${colors.foreground-alt}
 ; format-underline = #8fbcbb
+
+[module/kernel]
+type = custom/script
+exec = uname -r
+interval = 3600
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+format-underline = #ebcb8b
+label = %output%
 
 [settings]
 screenchange-reload = true
