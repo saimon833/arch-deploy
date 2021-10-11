@@ -16,9 +16,11 @@ bspc config gapless_monocle      true
 bspc rule -a Alacritty -o desktop='^1' 
 bspc rule -a firefox -o desktop='^2' follow=on
 bspc rule -a discord desktop='^9'
+bspc rule -a TelegramDesktop desktop='^9'
 #bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Xournalpp desktop='^3' follow=on
+bspc rule -a VSCodium desktop='^3' follow=on
 bspc rule -a 'Microsoft Teams - Preview' desktop='^10' 
 bspc rule -a Virt-manager desktop='^5' follow=on
 bspc rule -a Steam desktop='^6' follow=on
@@ -29,6 +31,7 @@ bspc rule -a Lutris desktop='^6' follow=on
 
 # Autostart
 
+gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
 picom &
@@ -40,7 +43,7 @@ pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || flatpak run com.discordapp.Discord &
 # pgrep -x teams || flatpak run com.microsoft.Teams &
 pgrep -x lxsession > /dev/null || lxsession &
-pgrep -x firefox > /dev/null || firefox &
+pgrep -f firefox > /dev/null || firefox &
 pgrep -x alacritty > /dev/null || alacritty &
 pgrep -x thunderbird > /dev/null || thunderbird &
 # pgrep -x firewall-applet > /dev/null || firewall-applet &
