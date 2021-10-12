@@ -172,8 +172,11 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /Dane
-mount-2 = /games
+mount-1 = /usr
+mount-2 = /var
+mount-3 = /data
+mount-4 = /games
+
 
 label-mounted = %{F#5e81ac}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted

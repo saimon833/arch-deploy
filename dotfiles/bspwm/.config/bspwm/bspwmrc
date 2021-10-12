@@ -31,7 +31,7 @@ bspc rule -a Lutris desktop='^6' follow=on
 
 # Autostart
 
-gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+#gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
 picom &
