@@ -133,14 +133,14 @@ super + shift + x
 
 # gnome system monitor
 ctrl + alt + Delete
-    gnome-system-monitor
+    	gnome-system-monitor
 # firefox
 super + alt + f
     firefox
 
 # file manager
 super + alt + e
-	nemo
+	nautilus
 
 XF86Audio{Mute,RaiseVolume,LowerVolume}
 	amixer -D pulse sset Master {mute,5%+ unmute,5%- unmute}
