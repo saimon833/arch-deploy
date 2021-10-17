@@ -71,7 +71,7 @@ font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = filesystem pulseaudio kernel xkeyboard cpu memory eth date  powermenu
+modules-right = filesystem pulseaudio kernel xkeyboard cpu memory date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -297,19 +297,17 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
-date =
-date-alt = " %d-%m-%Y " 
+date= " %d-%m-%Y " 
 
-time = %H:%M
-time-alt = %H:%M:%S
+time= %H:%M:%S
 
-format-prefix =  
+format-prefix = " " 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #5e81ac
 
-label = %date% %time%
+label = %time% %date%
 
 [module/pulseaudio]
 type = internal/pulseaudio
