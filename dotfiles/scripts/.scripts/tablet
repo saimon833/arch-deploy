@@ -5,5 +5,5 @@ if xinput | grep PenTablet
 	xinput map-to-output $id1 DP-0
 	xinput map-to-output $id2 DP-0
 else
-	echo "No i duoa"
+	echo "No i dupa"
 fi
