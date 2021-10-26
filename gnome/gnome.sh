@@ -19,7 +19,7 @@ echo "Configuring nvida\n"
 nvidia-xconfig
 
 echo "Downloading AUR packages"
-paru -S gnome-shell-extension-dash-to-dock minecraft-launcher synology-drive teams vscodium-bin nordic-darker-theme
+paru -S synology-drive 
 cd ~/git
 git clone https://github.com/arcticicestudio/nord-gnome-terminal.git
 cd nord-gnome-terminal/src
