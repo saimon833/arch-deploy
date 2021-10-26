@@ -51,7 +51,6 @@ wget \
 curl \
 texlive-most \
 texlive-latexextra \
-texmaker \
 python-pip \
 firefox \
 thunderbird \

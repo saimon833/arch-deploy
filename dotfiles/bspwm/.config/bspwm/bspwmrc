@@ -36,11 +36,12 @@ pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
 picom &
 nitrogen --restore & 
+pgrep -x pcmanfm || pcmanfm -d &
 pgrep -x parcellite > /dev/null || parcellite &
 pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x flameshot > /dev/null || flameshot &
-pgrep -x Discord > /dev/null || flatpak run com.discordapp.Discord &
+pgrep -x Discord > /dev/null || discord &
 # pgrep -x teams || flatpak run com.microsoft.Teams &
 pgrep -x lxsession > /dev/null || lxsession &
 pgrep -f firefox > /dev/null || firefox &

@@ -140,7 +140,7 @@ super + alt + f
 
 # file manager
 super + alt + e
-	nautilus
+	pcmanfm
 
 XF86Audio{Mute,RaiseVolume,LowerVolume}
 	amixer -D pulse sset Master {mute,5%+ unmute,5%- unmute}
