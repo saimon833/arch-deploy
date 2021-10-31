@@ -172,10 +172,11 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /usr
-mount-2 = /var
-mount-3 = /data
-mount-4 = /games
+mount-1 = /home
+mount-2 = /usr
+mount-3 = /var
+mount-4 = /data
+mount-5 = /games
 
 
 label-mounted = %{F#5e81ac}%mountpoint%%{F-}: %percentage_used%%

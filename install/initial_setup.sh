@@ -12,9 +12,9 @@ echo "127.0.1.1 ArchBox.localdomain Archbox" >> /etc/hosts
 echo root password 
 passwd
 
-pacman -S grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools reflector base-devel linux-headers avahi xdg-user-dirs \
+pacman -S grub efibootmgr networkmanager network-manager-applet dialog mtools reflector base-devel linux-headers avahi xdg-user-dirs \
 xdg-utils gvfs cups hplip alsa-utils pulseaudio virt-manager \
-qemu qemu-arch-extra edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft \
+qemu edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft \
 sof-firmware os-prober ntfs-3g virt-viewer firewalld mc openssh stow
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB

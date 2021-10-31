@@ -1,9 +1,10 @@
 #! /bin/sh
 
 #bspc monitor HDMI-0 -s DP-0
-bspc wm -O DP-0 HDMI-0
-bspc monitor DP-0 -d I II III IV V VI VII VIII 
-bspc monitor HDMI-0 -d IX X
+#bspc wm -O DP-0 HDMI-0
+bspc monitor -d I II III IV V VI VII VIII IX X
+#bspc monitor DP-0 -d I II III IV V VI VII VIII 
+#bspc monitor HDMI-0 -d IX X
 
 bspc config border_width         2
 bspc config window_gap          10
@@ -17,6 +18,7 @@ bspc rule -a Alacritty -o desktop='^1'
 bspc rule -a firefox -o desktop='^2' follow=on
 bspc rule -a discord desktop='^9'
 bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a Origin desktop='^7' floating=on
 #bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Xournalpp desktop='^3' follow=on
@@ -36,7 +38,6 @@ pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
 picom &
 nitrogen --restore & 
-pgrep -x pcmanfm || pcmanfm -d &
 pgrep -x parcellite > /dev/null || parcellite &
 pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
