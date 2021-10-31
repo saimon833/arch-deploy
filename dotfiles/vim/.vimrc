@@ -35,6 +35,7 @@ Plug 'arcticicestudio/nord-vim'
 "Plug 'valloric/youcompleteme'
 call plug#end()
 
+let g:tex_conceal = ''
 set number
 set relativenumber
 syntax on
