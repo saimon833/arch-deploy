@@ -22,6 +22,7 @@ bspc rule -a Origin desktop='^7' floating=on
 #bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Xournalpp desktop='^3' follow=on
+bspc rule -a Spotify desktop='^4' follow=on
 bspc rule -a VSCodium desktop='^3' follow=on
 bspc rule -a 'Microsoft Teams - Preview' desktop='^10' 
 bspc rule -a Virt-manager desktop='^5' follow=on
