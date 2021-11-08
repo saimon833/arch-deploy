@@ -1,10 +1,10 @@
 #! /bin/sh
 
-#bspc monitor HDMI-0 -s DP-0
+bspc monitor HDMI-0 -s DP-0
 #bspc wm -O DP-0 HDMI-0
-bspc monitor -d I II III IV V VI VII VIII IX X
-#bspc monitor DP-0 -d I II III IV V VI VII VIII 
-#bspc monitor HDMI-0 -d IX X
+#bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor DP-0 -d I II III IV V VI VII 
+bspc monitor HDMI-0 -d VIII IX X
 
 bspc config border_width         2
 bspc config window_gap          10
@@ -16,18 +16,18 @@ bspc config gapless_monocle      true
 # Window rules
 bspc rule -a Alacritty -o desktop='^1' 
 bspc rule -a firefox -o desktop='^2' follow=on
-bspc rule -a discord desktop='^9'
-bspc rule -a TelegramDesktop desktop='^9'
+bspc rule -a discord desktop='^8'
+bspc rule -a TelegramDesktop desktop='^8'
 bspc rule -a Origin desktop='^7' floating=on
 #bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Xournalpp desktop='^3' follow=on
-bspc rule -a Spotify desktop='^4' follow=on
+bspc rule -a spotify desktop='^4' follow=on
 bspc rule -a VSCodium desktop='^3' follow=on
-bspc rule -a 'Microsoft Teams - Preview' desktop='^10' 
+bspc rule -a 'Microsoft Teams - Preview' desktop='^9' 
 bspc rule -a Virt-manager desktop='^5' follow=on
 bspc rule -a Steam desktop='^6' follow=on
-bspc rule -a Thunderbird desktop='^8' 
+bspc rule -a Thunderbird desktop='^10' 
 bspc rule -a explorer.exe desktop='^7'
 bspc rule -a Lutris desktop='^6' follow=on
 
