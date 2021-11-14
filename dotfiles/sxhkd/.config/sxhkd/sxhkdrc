@@ -4,8 +4,8 @@
 super + Return
 	alacritty
 # program launcher
-super + {_,shift + } @space
-	rofi -show {drun,ssh}
+super + {_,shift,ctrl + } @d
+	rofi -show {drun,ssh,window}
 
 # make sxhkd reload its configuration files:
 super + Escape

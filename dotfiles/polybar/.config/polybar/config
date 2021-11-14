@@ -69,7 +69,7 @@ font-3 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:size=
 font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=8
 font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
 
-modules-left = bspwm xwindow
+modules-left = bspwm 
 modules-center = 
 modules-right = filesystem pulseaudio kernel xkeyboard cpu memory date powermenu
 
