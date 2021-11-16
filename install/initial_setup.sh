@@ -15,7 +15,7 @@ passwd
 pacman -S grub efibootmgr networkmanager network-manager-applet dialog mtools reflector base-devel linux-headers avahi xdg-user-dirs \
 xdg-utils gvfs cups hplip alsa-utils pulseaudio virt-manager \
 qemu edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft \
-sof-firmware os-prober ntfs-3g virt-viewer firewalld mc openssh stow
+sof-firmware os-prober ntfs-3g virt-viewer firewalld mc openssh stow pigz
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
