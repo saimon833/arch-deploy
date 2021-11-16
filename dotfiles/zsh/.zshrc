@@ -124,7 +124,7 @@ alias mkd='mkdir -pv'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias :q='exit'
-alias neoall='neofetch --no_config'
+alias neofetch='neofetch --no_config'
 alias dot='cd ~/git/arch-deploy'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
