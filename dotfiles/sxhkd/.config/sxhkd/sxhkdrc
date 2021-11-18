@@ -4,7 +4,7 @@
 super + Return
 	alacritty
 # program launcher
-super + {_,shift,ctrl + } @d
+super + {_,shift,ctrl + } d
 	rofi -show {drun,ssh,window}
 
 # make sxhkd reload its configuration files:
