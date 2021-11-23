@@ -144,3 +144,7 @@ super + alt + e
 
 XF86Audio{Mute,RaiseVolume,LowerVolume}
 	amixer -D pulse sset Master {mute,5%+ unmute,5%- unmute}
+
+# picom toggle 
+ctrl + alt + o    
+	~/.config/sxhkd/picom.sh
