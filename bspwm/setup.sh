@@ -1,7 +1,7 @@
 #!/usr/bin/zsh
 sudo pacman -S nvidia-dkms nvidia-utils xorg nvidia-settings xorg xorg-xinit \
 flameshot nautilus pavucontrol eog evince bspwm sxhkd alacritty nitrogen \
-ranger ueberzug lxsession parcellite rofi
+ranger ueberzug lxsession parcellite rofi dunst
 paru -S polybar pacman-contrib ttf-font-awesome siji-git betterlockscreen ly
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles xinit
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles alacritty
@@ -13,3 +13,4 @@ stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles gtk2.0
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles gtk-3.0
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles picom
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles rofi
+stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles dunst
