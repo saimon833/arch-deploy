@@ -177,6 +177,7 @@ mount-2 = /usr
 mount-3 = /var
 mount-4 = /data
 mount-5 = /games
+mount-6 = /games2
 
 
 label-mounted = %{F#5e81ac}%mountpoint%%{F-}: %percentage_used%%

@@ -130,6 +130,7 @@ alias yeet='paru -Rcns'
 alias flex='neofetch'
 alias nano='vim'
 alias linux='cat ~/.linuxcopypasta'
+alias refmir="sudo reflector --verbose -c Poland -c Germany -c France -l 10 -a 2 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

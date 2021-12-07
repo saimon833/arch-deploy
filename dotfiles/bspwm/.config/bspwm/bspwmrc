@@ -48,6 +48,7 @@ pgrep -x Discord > /dev/null || discord &
 # pgrep -x teams || flatpak run com.microsoft.Teams &
 pgrep -x lxsession > /dev/null || lxsession &
 pgrep -f firefox > /dev/null || firefox &
+pgrep -f dunst > /dev/null || dunst &
 pgrep -x alacritty > /dev/null || alacritty &
 pgrep -x thunderbird > /dev/null || thunderbird &
 # pgrep -x firewall-applet > /dev/null || firewall-applet &
