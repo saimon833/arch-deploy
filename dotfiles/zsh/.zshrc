@@ -114,7 +114,7 @@ alias ll='ls -alF'
 alias l='ls -CF' 
 alias la='ls -A' 
 alias cl='clear'
-alias yt='youtube-dl -i'
+alias yt='yt-dlp -i'
 alias yta='yt -x -f bestaudio/best'
 alias dupa="echo No i dupa"
 alias cp='cp -iv'
@@ -131,6 +131,7 @@ alias flex='neofetch'
 alias nano='vim'
 alias linux='cat ~/.linuxcopypasta'
 alias refmir="sudo reflector --verbose -c Poland -c Germany -c France -l 10 -a 2 -p https --sort rate --save /etc/pacman.d/mirrorlist"
+alias maek='make -j16'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

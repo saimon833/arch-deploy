@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc monitor HDMI-0 -s DP-0
+#bspc monitor HDMI-0 -s DP-0
 #bspc wm -O DP-0 HDMI-0
 #bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor DP-0 -d I II III IV V VI VII 
@@ -18,7 +18,8 @@ bspc rule -a Alacritty -o desktop='^1'
 bspc rule -a firefox -o desktop='^2' follow=on
 bspc rule -a discord desktop='^8'
 bspc rule -a TelegramDesktop desktop='^8'
-bspc rule -a Origin desktop='^7' floating=on
+bspc rule -a origin desktop='^7' floating=on
+bspc rule 'Neko Saper' floating=on
 #bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Audacious desktop='^4' follow=on
@@ -31,6 +32,7 @@ bspc rule -a Steam desktop='^6' follow=on
 bspc rule -a Thunderbird desktop='^10' 
 bspc rule -a explorer.exe desktop='^7'
 bspc rule -a Lutris desktop='^6' follow=on
+bspc rule -a Zathura state=tiled
 
 
 # Autostart
@@ -38,10 +40,11 @@ bspc rule -a Lutris desktop='^6' follow=on
 #gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
 setxkbmap pl &
+$HOME/.config/polybar/launch.sh
 picom &
 nitrogen --restore & 
 pgrep -x parcellite > /dev/null || parcellite &
-pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
+#pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || discord &
@@ -53,4 +56,3 @@ pgrep -x alacritty > /dev/null || alacritty &
 pgrep -x thunderbird > /dev/null || thunderbird &
 # pgrep -x firewall-applet > /dev/null || firewall-applet &
 pgrep -x nm-applet > /dev/null || nm-applet &
-$HOME/.config/polybar/launch.sh
