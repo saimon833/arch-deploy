@@ -65,11 +65,11 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:size=8
-font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=8
-font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
+font-3 = Font Awesome 6 Brands,Font Awesome 6 Brands Regular:style=Regular:size=8
+font-4 = Font Awesome 6 Free,Font Awesome 6 Free Solid:style=Solid:size=8
+font-5 = Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular:size=8
 
-modules-left = bspwm xwindow
+modules-left = bspwm 
 modules-center = 
 modules-right = filesystem pulseaudio xkeyboard cpu memory date powermenu
 
@@ -118,14 +118,14 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Brands,Font Awesome 5 Brands Regular:style=Regular:size=8
-font-4 = Font Awesome 5 Free,Font Awesome 5 Free Solid:style=Solid:size=8
-font-5 = Font Awesome 5 Free,Font Awesome 5 Free Regular:style=Regular:size=8
+font-3 = Font Awesome 6 Brands,Font Awesome 6 Brands Regular:style=Regular:size=8
+font-4 = Font Awesome 6 Free,Font Awesome 6 Free Solid:style=Solid:size=8
+font-5 = Font Awesome 6 Free,Font Awesome 6 Free Regular:style=Regular:size=8
 
 
 modules-left = bspwm xwindow
 modules-center = 
-modules-right = filesystem cpu memory date
+modules-right = filesystem cpu memory powermenu date 
 
 ;tray-background = #0063ff
 
