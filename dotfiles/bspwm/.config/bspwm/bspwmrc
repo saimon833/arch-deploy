@@ -1,6 +1,6 @@
 #! /bin/sh
 
-#bspc monitor HDMI-0 -s DP-0
+bspc monitor HDMI-0 -s DP-0
 #bspc wm -O DP-0 HDMI-0
 #bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor DP-0 -d I II III IV V VI VII 
@@ -18,15 +18,19 @@ bspc rule -a Alacritty -o desktop='^1'
 bspc rule -a firefox -o desktop='^2' follow=on
 bspc rule -a discord desktop='^8'
 bspc rule -a TelegramDesktop desktop='^8'
-bspc rule -a origin desktop='^7' floating=on
+bspc rule -a origin.exe floating=on
+bspc rule -a origin floating=on
 bspc rule 'Neko Saper' floating=on
 #bspc rule -a Discord desktop='^9'
 bspc rule -a vlc desktop='^4' follow=on
 bspc rule -a Audacious desktop='^4' follow=on
+bspc rule -a strawberry desktop='^4' follow=on
 bspc rule -a Xournalpp desktop='^3' follow=on
 bspc rule -a spotify desktop='^4' follow=on
 bspc rule -a VSCodium desktop='^3' follow=on
 bspc rule -a 'Microsoft Teams - Preview' desktop='^9' 
+bspc rule -a chromium desktop='^9' 
+bspc rule -a Chromium desktop='^9' 
 bspc rule -a Virt-manager desktop='^5' follow=on
 bspc rule -a Steam desktop='^6' follow=on
 bspc rule -a Thunderbird desktop='^10' 
@@ -44,7 +48,7 @@ $HOME/.config/polybar/launch.sh
 picom &
 nitrogen --restore & 
 pgrep -x parcellite > /dev/null || parcellite &
-#pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
+pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || discord &
@@ -52,6 +56,7 @@ pgrep -x Discord > /dev/null || discord &
 pgrep -x lxsession > /dev/null || lxsession &
 pgrep -f firefox > /dev/null || firefox &
 pgrep -f dunst > /dev/null || dunst &
+pgrep -f deluge-gtk > /dev/null || deluge &
 pgrep -x alacritty > /dev/null || alacritty &
 pgrep -x thunderbird > /dev/null || thunderbird &
 # pgrep -x firewall-applet > /dev/null || firewall-applet &
