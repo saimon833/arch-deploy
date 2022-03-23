@@ -136,4 +136,4 @@ alias maek='make -j16'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh.
-[[ ! -f ~/git/arch-deploy/dotfiles/zsh/.p9k.zsh ]] || source ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh
+[[ ! -f ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh ]] || source ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh
