@@ -11,7 +11,7 @@ cd paru
 makepkg -si
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ paru
 cd $HOME
-pip3 install pigments
+#pip3 install pigments
 sudo pacman -S zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

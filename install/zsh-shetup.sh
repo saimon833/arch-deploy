@@ -16,6 +16,6 @@ stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ htop
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ xdg-dirs
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ scripts
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles/ makepkg
-source ~/.zshrc
+#source ~/.zshrc
 mkdir $HOME/.themes
 git clone https://github.com/EliverLara/Nordic/ $HOME/.themes/Nordic
