@@ -117,6 +117,8 @@ base_color=
 linux=
 color_terminals=
 
+alacritty=
+
 xterm-256color=
 
 [Panels]

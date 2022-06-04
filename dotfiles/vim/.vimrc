@@ -38,7 +38,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 
 " Code completion, youcompleteme
-"Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme'
 call plug#end()
 
 let g:tex_conceal = ''
@@ -71,26 +71,20 @@ set showcmd " show command in bottom bar
 set showmatch  " highlight matching brackets
 set laststatus=2 "
 set nopaste
+set background=dark
 
-colorscheme nord
-highlight Comment ctermfg=darkgray
-if (has("termguicolors"))
-  set termguicolors
-endif
+"colorscheme nord
+"highlight Comment ctermfg=darkgray
+"if (has("termguicolors"))
+"  set termguicolors
+"endif
 
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
-" augroup nord
-"     autocmd!
-"     autocmd ColorScheme * highlight shDerefSimple ctermfg=6 guifg=#88C0D0
-"     autocmd ColorScheme * highlight shDerefVar ctermfg=6 guifg=#88C0D0
-"     autocmd ColorScheme * highlight shVariable ctermfg=6 guifg=#88C0D0
-" augroup END
-
-augroup nord-overrides
-    autocmd!
-    autocmd ColorScheme nord highlight "...
-augroup END
+"augroup nord-overrides
+"    autocmd!
+"    autocmd ColorScheme nord highlight "...
+"augroup END
 
 """" Search
 set hlsearch " highlight matches
@@ -103,9 +97,9 @@ filetype plugin on
 
 " Lightline
 set noshowmode
-let g:lightline = {
-      \ 'colorscheme': 'nord',
-      \ }
+"let g:lightline = {
+"      \ 'colorscheme': 'nord',
+"      \ }
 
 " Rainbow
 let g:rainbow_active = 1
