@@ -1,7 +1,8 @@
 #!/usr/bin/zsh
-sudo pacman -S nvidia-dkms nvidia-utils xorg nvidia-settings xorg xorg-xinit \
+sudo pacman -S xorg xorg xorg-xinit \
 flameshot pavucontrol zathura nomacs bspwm sxhkd alacritty nitrogen \
-ranger ueberzug lxsession parcellite rofi dunst lightdm lightdm-gtk-greeter
+ranger ueberzug lxsession parcellite rofi dunst lightdm lightdm-gtk-greeter \
+mesa
 paru -S polybar pacman-contrib ttf-font-awesome siji-git 
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles xinit
 stow -t $HOME/ -d $HOME/git/arch-deploy/dotfiles alacritty
