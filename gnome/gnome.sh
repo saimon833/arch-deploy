@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-pacman -S nvidia nvidia-utils xorg xorg-server gdm 
+pacman -S xorg xorg-server gdm mesa vulkan-radeon
 systemctl enable gdm
 
 pacman -S gnome-shell \
