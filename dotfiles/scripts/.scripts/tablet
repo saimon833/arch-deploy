@@ -2,5 +2,5 @@
 xinput | grep PenTablet 
 echo "Input dev id's: "
 read id1 #id2
-xinput map-to-output $id1 DP-0
+xinput map-to-output $id1 DisplayPort-0
 #xinput map-to-output $id2 DP-0

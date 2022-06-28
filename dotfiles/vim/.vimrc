@@ -25,7 +25,7 @@ Plug 'preservim/nerdtree'
 " Indentation guidelines
 Plug 'yggdroot/indentline'
 
-Plug 'vim-latex/vim-latex'
+"Plug 'lervag/vimtex'
 
 Plug 'airblade/vim-gitgutter'
 
@@ -150,3 +150,5 @@ nmap <C-p> <Plug>MarkdownPreviewToggle
 " zA: open a fold your cursor is on recursively
 " zc: close a fold your cursor is on
 " zC: close a fold your cursor is on recursively
+
+

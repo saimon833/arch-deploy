@@ -44,6 +44,7 @@ bspc rule -a Zathura state=tiled
 
 #gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
+pgrep -x gpg-agent > /dev/null || gpg-agent
 setxkbmap pl &
 $HOME/.config/polybar/launch.sh
 picom &
