@@ -1,8 +1,7 @@
 #! /bin/sh
 
-xrandr --output DisplayPort-0 --primary --mode 1920x1080 --pos 1920x0 --rate 165 --rotate normal --output DisplayPort-1 --mode 1920x1080 --pos 0x0 --rate 165 --rotate normal --output HDMI-A-0 --off --output HDMI-A-1 --off
+xrandr --output DisplayPort-0 --primary --mode 1920x1080 --pos 1920x0 --rate 165 --rotate normal  --output DisplayPort-1 --mode 1920x1080 --pos 0x0 --rate 165 --rotate normal --output HDMI-A-0 --off --output HDMI-A-1 --off
 bspc monitor DisplayPort-1 -s DisplayPort-0
-#bspc wm -O DP-0 HDMI-0
 #bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor DisplayPort-0 -d I II III IV V VI VII 
 bspc monitor DisplayPort-1 -d VIII IX X
@@ -13,6 +12,7 @@ bspc config window_gap          10
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
 
 # Window rules
 bspc rule -a Alacritty -o desktop='^1' 
@@ -30,8 +30,6 @@ bspc rule -a Xournalpp desktop='^3' follow=on
 bspc rule -a spotify desktop='^4' follow=on
 bspc rule -a VSCodium desktop='^3' follow=on
 bspc rule -a 'Microsoft Teams - Preview' desktop='^9' 
-#bspc rule -a chromium desktop='^9' 
-#bspc rule -a Chromium desktop='^9' 
 bspc rule -a Virt-manager desktop='^5' follow=on
 bspc rule -a Steam desktop='^6' follow=on
 bspc rule -a Thunderbird desktop='^10' 
@@ -42,7 +40,6 @@ bspc rule -a Zathura state=tiled
 
 # Autostart
 
-#gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 pgrep -x ssh-agent > /dev/null || ssh-agent -s
 pgrep -x gpg-agent > /dev/null || gpg-agent
 setxkbmap pl &
@@ -50,16 +47,17 @@ $HOME/.config/polybar/launch.sh
 picom &
 nitrogen --restore & 
 pgrep -x parcellite > /dev/null || parcellite &
-pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
+#pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || discord &
-# pgrep -x teams || flatpak run com.microsoft.Teams &
 pgrep -x lxsession > /dev/null || lxsession &
 pgrep -f firefox > /dev/null || firefox &
 pgrep -f dunst > /dev/null || dunst &
-pgrep -f deluge-gtk > /dev/null || deluge &
+#pgrep -f deluge-gtk > /dev/null || deluge &
+#pgrep -f qbittorrent > /dev/null || qbittorrent &
 pgrep -x alacritty > /dev/null || alacritty &
-pgrep -x thunderbird > /dev/null || thunderbird &
+#pgrep protonmail > /dev/null || podman start protonmail-bridge &
 # pgrep -x firewall-applet > /dev/null || firewall-applet &
-pgrep -x nm-applet > /dev/null || nm-applet &
+pgrep -x thunderbird > /dev/null || thunderbird &
+pgrep -x nm-applet > /dev/null || nm-applet 
