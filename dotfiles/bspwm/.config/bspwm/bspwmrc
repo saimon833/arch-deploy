@@ -4,7 +4,7 @@ xrandr --output DisplayPort-0 --primary --mode 1920x1080 --pos 1920x0 --rate 165
 bspc monitor DisplayPort-1 -s DisplayPort-0
 #bspc monitor -d I II III IV V VI VII VIII IX X
 bspc monitor DisplayPort-0 -d I II III IV V VI VII 
-bspc monitor DisplayPort-1 -d VIII IX X
+bspc monitor DisplayPort-1 -d VIII IX X XI XII XIII XIV
 
 bspc config border_width         2
 bspc config window_gap          10
@@ -40,14 +40,14 @@ bspc rule -a Zathura state=tiled
 
 # Autostart
 
-pgrep -x ssh-agent > /dev/null || ssh-agent -s
-pgrep -x gpg-agent > /dev/null || gpg-agent
+pgrep -x ssh-agent > /dev/null || ssh-agent -s &
+pgrep -x gpg-agent > /dev/null || gpg-agent &
 setxkbmap pl &
-$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
 picom &
 nitrogen --restore & 
 pgrep -x parcellite > /dev/null || parcellite &
-#pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
+pgrep -x cloud-drive-ui > /dev/null || synology-drive  &
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x flameshot > /dev/null || flameshot &
 pgrep -x Discord > /dev/null || discord &

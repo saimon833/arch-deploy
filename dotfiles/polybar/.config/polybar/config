@@ -215,6 +215,10 @@ ws-icon-6 = VII;
 ws-icon-7 = X;
 ws-icon-8 = VIII;
 ws-icon-9 = IX;
+ws-icon-10 = XI;X
+ws-icon-11 = XII;X
+ws-icon-12 = XIII;X
+ws-icon-13 = XIV;X
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
