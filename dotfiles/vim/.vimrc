@@ -38,7 +38,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 
 
 " Code completion, youcompleteme
-Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 call plug#end()
 
 let g:tex_conceal = ''
