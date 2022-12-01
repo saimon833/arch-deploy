@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+sudo systemctl stop lxd.socket && sudo systemctl stop lxd.service
