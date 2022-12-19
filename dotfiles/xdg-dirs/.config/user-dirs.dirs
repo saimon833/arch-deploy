@@ -7,7 +7,7 @@
 # 
 XDG_DESKTOP_DIR="$HOME/"
 XDG_DOWNLOAD_DIR="/data/Pobrane"
-XDG_TEMPLATES_DIR="$HOME/"
+XDG_TEMPLATES_DIR="$HOME/Templates"
 XDG_PUBLICSHARE_DIR="$HOME/"
 XDG_DOCUMENTS_DIR="/data/Zabijcie mnie vol 2/Dokumenty"
 XDG_MUSIC_DIR="/data/Zabijcie mnie vol 2/Muzyka"
