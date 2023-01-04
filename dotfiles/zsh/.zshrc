@@ -132,6 +132,7 @@ alias nano='vim'
 alias linux='cat ~/.linuxcopypasta'
 alias refmir="sudo reflector --verbose -c Poland -c Germany -c France -l 10 -a 2 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 alias maek='make -j16'
+alias pandoc-md='pandoc -s -V geometry:margin=1in '
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
