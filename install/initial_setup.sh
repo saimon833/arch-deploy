@@ -27,13 +27,11 @@ systemctl enable reflector.timer
 systemctl enable fstrim.timer
 systemctl enable NetworkManager
 systemctl enable firewalld.service
-
-useradd -m szymon 
-echo szymon password 
-passwd szymon
-echo "szymon ALL=(ALL) ALL" >> /etc/sudoers.d/szymon
-
-
+read username
+useradd -m $username 
+echo $username password 
+passwd $username
+echo "$username ALL=(ALL) ALL" >> /etc/sudoers.d/$username
 
 echo "Enabling multilib\n"
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
@@ -61,4 +59,4 @@ echo "Enabling & configuring libvirt\n"
 sed -i "/unix_sock_group = \"libvirt\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 sed -i "/unix_sock_rw_perms = \"0770\"/"'s/^#//' /etc/libvirt/libvirtd.conf
 systemctl enable libvirtd.service
-sudo usermod -aG libvirt szymon
+sudo usermod -aG libvirt $username
