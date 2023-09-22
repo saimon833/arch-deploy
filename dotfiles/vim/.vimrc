@@ -1,8 +1,8 @@
 """" vim-plug autoinstall
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 """" vim-plug plugins
 call plug#begin('~/.vim/plugged')
@@ -89,7 +89,7 @@ set background=dark
 """" Search
 set hlsearch " highlight matches
 if has('mouse')
-  set mouse=a
+    set mouse=a
 endif
 
 " Things
@@ -119,8 +119,8 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 let NERDTreeShowHidden=1
 
 function! GitStatus()
-  let [a,m,r] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', a, m, r)
+    let [a,m,r] = GitGutterGetHunkSummary()
+    return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
 
@@ -151,4 +151,11 @@ nmap <C-p> <Plug>MarkdownPreviewToggle
 " zc: close a fold your cursor is on
 " zC: close a fold your cursor is on recursively
 
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
 
