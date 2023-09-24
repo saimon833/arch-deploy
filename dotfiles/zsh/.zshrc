@@ -110,7 +110,7 @@ function tarhelp(){
 alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='ls --color=auto --group-directories-first' 
-alias ll='ls -alF' 
+alias ll='ls -alFh' 
 alias l='ls -CF' 
 alias la='ls -A' 
 alias cl='clear'
@@ -132,8 +132,8 @@ alias nano='vim'
 alias linux='cat ~/.linuxcopypasta'
 alias refmir="sudo reflector --verbose -c Poland -c Germany -c France -l 10 -a 2 -p https --sort rate --save /etc/pacman.d/mirrorlist"
 alias maek='make -j16'
-alias pandoc-md="pandoc -s \
-	 -f commonmark --include-in-header=/home/szymon/.scripts/template.tex "
+alias kubectl='kubectl --kubeconfig=/home/szymon/Documents/skni/kubeconfig'
+#alias flatpak='flatpak --user'
 #--wrap=preserve '
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

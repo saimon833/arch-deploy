@@ -31,12 +31,6 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'arcticicestudio/nord-vim'
 
-" Markdown
-Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
-
 " Code completion, youcompleteme
 "Plug 'valloric/youcompleteme'
 call plug#end()
@@ -123,33 +117,6 @@ function! GitStatus()
     return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
-
-
-" Markdown
-let g:mkdp_port = '10000'
-let g:mkdp_page_title = '${name}'
-let g:vim_markdown_conceal = 0
-let g:vim_markdown_math = 1
-let g:vim_markdown_strikethrough = 1
-let g:tex_conceal = ""
-let g:vim_markdown_conceal_code_blocks = 0
-let g:vim_markdown_math = 1
-
-" Markdown preview
-nmap <C-s> <Plug>MarkdownPreview
-execute "set <M-s>=\es"
-nmap <M-s> <Plug>MarkdownPreviewStop
-nmap <C-p> <Plug>MarkdownPreviewToggle
-
-" Markdown 
-" zr: reduces fold level throughout the buffer
-" zR: opens all folds
-" zm: increases fold level throughout the buffer
-" zM: folds everything all the way
-" za: open a fold your cursor is on
-" zA: open a fold your cursor is on recursively
-" zc: close a fold your cursor is on
-" zC: close a fold your cursor is on recursively
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
