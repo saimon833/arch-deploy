@@ -1,0 +1,12 @@
+#!/bin/sh
+
+DAY=$(date +%A)
+
+if [ -e /data/backup/incr/$DAY ] ; then
+  rm -fr /data/backup/incr/$DAY
+fi
+folder=/home/szymon/
+#targets=$(ls -1 $folder | sed "s#^#$folder#")
+
+#rsync -a --delete --quiet --inplace  --backup --backup-dir=/data/backup/incr/$DAY $targets /data/backup/full/
+rsync -a --exclude={".*","Dyski","Games"} --delete --quiet --inplace  --backup --backup-dir=/data/backup/incr/$DAY $folder /data/backup/full/
