@@ -24,7 +24,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions vi-mode python command-not-found copyfile copypath colored-man-pages lxd)
+plugins=(git archlinux zsh-syntax-highlighting zsh-autosuggestions vi-mode python colored-man-pages lxd kubectx ansible podman)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -137,6 +137,3 @@ alias kubectl='kubectl --kubeconfig=/home/szymon/Documents/skni/kubeconfig'
 #--wrap=preserve '
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh.
-[[ ! -f ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh ]] || source ~/git/arch-deploy/dotfiles/zsh/.p10k.zsh
